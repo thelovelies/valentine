@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Be my Valentine? 💝</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg" data-page="ask">
+  <div class="bgshow" aria-hidden="true"></div>
+  <div class="floaters" aria-hidden="true"></div>
+
+  <div id="startOverlay" class="overlay">
+    <button class="btn primary giant">Tap to start 💖</button>
+    <div class="mini">Music starts after one tap (phone/browser rule).</div>
+  </div>
+
+  <main class="card big">
+    <div class="topbar">
+      <div class="avatar" aria-hidden="true">🐱</div>
+      <div class="mini" id="fromMini">Someone</div>
+
+      <div class="rightControls">
+        <button class="iconBtn" id="themeBtn" title="Theme">🌓</button>
+        <button class="iconBtn" id="musicBtn" title="Music">🔊</button>
+      </div>
+    </div>
+
+    <h1 class="question"><span id="toSpan">Friend</span>, will you be my valentine? 💘</h1>
+    <p class="sub" id="msgLine"></p>
+
+    <div class="buttons">
+      <button id="yesBtn" class="btn primary giant">Yes 💗</button>
+      <button id="noBtn" class="btn ghost giant" type="button">No</button>
+    </div>
+
+    <div class="attempts">
+      <div class="mini">Messages</div>
+      <div id="lines" class="lines"></div>
+    </div>
+
+    <p class="footer-note">💞</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

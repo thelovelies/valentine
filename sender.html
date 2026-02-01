@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sender Dashboard 🎁</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg" data-page="sender">
+  <div class="bgshow" aria-hidden="true"></div>
+  <div class="floaters" aria-hidden="true"></div>
+
+  <main class="card big">
+    <div class="topbar">
+      <div class="badge">🎁 Sender Dashboard</div>
+      <div class="rightControls">
+        <button class="iconBtn" id="themeBtn" title="Theme">🌓</button>
+      </div>
+    </div>
+
+    <h1 class="question">Status</h1>
+    <p class="sub" id="senderLine"></p>
+
+    <div class="statusBox" id="statusBox">
+      Waiting… (share the receiver link)
+    </div>
+
+    <div class="row" style="margin-top:12px;">
+      <button id="senderShareImgBtn" class="btn primary">Share acceptance image 📸</button>
+      <button id="senderDownloadImgBtn" class="btn">Download image ⬇️</button>
+    </div>
+
+    <section class="giftbox">
+      <h2 class="mini">Select gifts</h2>
+      <p class="sub small">choose gift to show to receiver</p>
+
+      <div class="giftgrid">
+        <a class="gift" id="gift1" target="_blank" rel="noreferrer">🌹 Flowers </a>
+        <a class="gift" id="gift2" target="_blank" rel="noreferrer">🍫 Chocolate </a>
+        <a class="gift" id="gift3" target="_blank" rel="noreferrer">🧸 Teddy </a>
+        <a class="gift" id="gift4" target="_blank" rel="noreferrer">💌 Card </a>
+      </div>
+    </section>
+
+    <p class="footer-note">Keep this dashboard link private ✅</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LoveLink Generator 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg" data-page="index">
+  <div class="bgshow" aria-hidden="true"></div>
+  <div class="floaters" aria-hidden="true"></div>
+
+  <main class="card">
+    <div class="topbar">
+      <div class="badge">💘 LoveLink</div>
+      <div class="rightControls">
+        <button class="iconBtn" id="themeBtn" title="Theme">🌓</button>
+      </div>
+    </div>
+
+    <h1>Create your Valentine link</h1>
+    <p class="sub">Fill details → generate link → share to your person.</p>
+
+    <div class="grid2">
+      <label class="field">
+        <span>Your name</span>
+        <input id="fromName" maxlength="30" placeholder="e.g., Ek villain" />
+      </label>
+      <label class="field">
+        <span>Their name</span>
+        <input id="toName" maxlength="30" placeholder="e.g., Nirali" />
+      </label>
+    </div>
+
+    <label class="field">
+      <span>Your WhatsApp number (sender notification)</span>
+      <input id="wa" maxlength="25" placeholder="e.g., +2557XXXXXXXX" />
+      <div class="mini">Include country code. This enables acceptance notifications.</div>
+    </label>
+
+    <label class="field">
+      <span>Extra message (optional)</span>
+      <input id="msg" maxlength="90" placeholder="e.g., I have a surprise for you 😄" />
+    </label>
+
+    <div class="giftPick">
+      <div class="mini">Choose gifts to show (optional)</div>
+      <label><input type="checkbox" value="flowers" class="gcb"> 🌹 Flowers</label>
+      <label><input type="checkbox" value="chocolate" class="gcb"> 🍫 Chocolate</label>
+      <label><input type="checkbox" value="teddy" class="gcb"> 🧸 Teddy</label>
+      <label><input type="checkbox" value="card" class="gcb"> 💌 Card</label>
+    </div>
+
+    <div class="row">
+      <button id="makeBtn" class="btn primary">Generate link ✨</button>
+      <button id="shareBtn" class="btn" disabled>Share 🔗</button>
+    </div>
+
+    <div class="result">
+      <div class="mini">Receiver link</div>
+      <input id="linkOut" readonly value="Generate first…" />
+      <div class="row">
+        <button id="copyBtn" class="btn tiny" disabled>Copy</button>
+        <a id="openReceiver" class="btn tiny primary" href="#" target="_blank" rel="noreferrer" aria-disabled="true">Open</a>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="mini">Sender dashboard link (keep private)</div>
+      <input id="senderOut" readonly value="Generate first…" />
+      <div class="row">
+        <button id="copySenderBtn" class="btn tiny" disabled>Copy</button>
+        <a id="openSender" class="btn tiny" href="#" target="_blank" rel="noreferrer" aria-disabled="true">Open</a>
+      </div>
+      <div class="mini">You’ll use this link later to share an acceptance image.</div>
+    </div>
+
+    <p class="footer-note">Host on GitHub Pages ✅</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

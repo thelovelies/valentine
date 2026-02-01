@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YES! 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg" data-page="yes">
+  <div class="bgshow" aria-hidden="true"></div>
+  <div class="floaters" aria-hidden="true"></div>
+
+  <div id="startOverlay" class="overlay">
+    <button class="btn primary giant">Tap to celebrate 💖</button>
+    <div class="mini">Music starts after one tap.</div>
+  </div>
+
+  <main class="card big">
+    <div class="topbar">
+      <div class="badge">💞 Accepted</div>
+      <div class="rightControls">
+        <button class="iconBtn" id="themeBtn" title="Theme">🌓</button>
+        <button class="iconBtn" id="musicBtn" title="Music">🔊</button>
+      </div>
+    </div>
+
+    <div class="hearts" aria-hidden="true"></div>
+
+    <h1 class="question">It’s a YES! 🎉</h1>
+    <p class="sub" id="yesLine"></p>
+
+    <div class="row">
+      <button id="shareImgBtn" class="btn primary">Share as image 📸</button>
+      <button id="downloadImgBtn" class="btn">Download image ⬇️</button>
+    </div>
+
+    <section class="giftbox" id="giftBox">
+      <h2 class="mini">Pick a gift 🎁</h2>
+      <p class="sub small">This sends a WhatsApp message to the sender.</p>
+
+      <div class="giftgrid">
+        <button class="giftBtn" data-key="flowers" data-label="Flowers 🌹">🌹 Flowers</button>
+        <button class="giftBtn" data-key="chocolate" data-label="Chocolate 🍫">🍫 Chocolate</button>
+        <button class="giftBtn" data-key="teddy" data-label="Teddy 🧸">🧸 Teddy</button>
+        <button class="giftBtn" data-key="card" data-label="Card 💌">💌 Card</button>
+      </div>
+    </section>
+
+    <p class="footer-note">Screenshot friendly 😄</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
