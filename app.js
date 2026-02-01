@@ -541,12 +541,21 @@ ${senderDash.toString()}`;
   }
 
   // Affiliate links you set (replace with real ones)
-  const giftLinks = {
-    gift1: "https://example.com/flowers?ref=yourid",
-    gift2: "https://example.com/chocolate?ref=yourid",
-    gift3: "https://example.com/teddy?ref=yourid",
-    gift4: "https://example.com/card?ref=yourid",
-  };
+  // ================= WHATSAPP ASSISTED GIFTS =================
+const MY_WA = "+255744100246"; // <-- PUT YOUR NUMBER HERE (with country code)
+
+function waGift(text){
+  const num = MY_WA.replace(/\D/g, "");
+  return `https://wa.me/${num}?text=${encodeURIComponent(text)}`;
+}
+
+const giftLinks = {
+  gift1: waGift("🌹 Hi! I want to arrange Valentine flowers. Please help me 💖"),
+  gift2: waGift("🍫 Hi! I want to arrange Valentine chocolate as a gift 💕"),
+  gift3: waGift("🧸 Hi! I want to arrange a Valentine teddy gift 💘"),
+  gift4: waGift("💌 Hi! I want a custom Valentine card / message 💞"),
+};
+
   Object.entries(giftLinks).forEach(([id, url]) => {
     const el = $(id);
     if (el) el.href = url;
@@ -569,3 +578,4 @@ ${senderDash.toString()}`;
     await shareImage(blob, "acceptance.png");
   });
 })();
+
